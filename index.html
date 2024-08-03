@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>********  Haitham apdo  ********</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #97e1ec;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #e3d4d4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #000000;
+            font-size: 266;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+        }
+        .social-links {
+            list-style: none;
+            padding: 0;
+        }
+        .social-links li {
+            display: inline-block;
+            margin: 10px;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #f8ffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .social-links a.facebook {
+            background: #3b5998;
+        }
+        .social-links a.twitter {
+            background: #1da1f2;
+        }
+        .social-links a.instagram {
+            background: #e1306c;
+        }
+        .social-links a.telegram{
+            background: #033c58;
+        }
+        #decorateBtn {
+            margin: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .decoration {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, #ff0, #f00);
+            border-radius: 50%;
+            animation: float 5s linear infinite;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-800px);
+                opacity: 0;
+            }
+        }
+    </style>
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>ENG/ Haitham apdo </h1>
+        <img src="WhatsApp Image 2024-08-03 at 14.02.04_036dd81b.jpg" alt="في حاجه غلط ياعم" class="profile-img">
+        <ul class="social-links">
+            <li><a href="https://www.facebook.com/profile.php?id=100019377902151&mibextid=ZbWKwL" target="" class="facebook">facebook</a></li>
+            <li><a href="https://www.twitter.com" target="_blank" class="twitter">twitter</a></li>
+            <li><a href="https://www.instagram.com/haithamhesham3?igsh=MWJoaGJjZ3Q1anRkcg==" target="_blank" class="instagram">instgram</a></li>
+            <li><a href="http://t.me/haithamapdo" target="_blank" class="telegram">telegram</a></li>
+        </ul>
+    </ul>
+    <button id="decorateBtn">click here</button>
+
+<script>
+    document.getElementById('decorateBtn').addEventListener('click', function() {
+        for (let i = 0; i < 50; i++) {
+            let decoration = document.createElement('div');
+            decoration.className = 'decoration';
+            decoration.style.left = Math.random() * window.innerWidth + 'px';
+            decoration.style.top = Math.random() * window.innerHeight + 'px';
+            document.body.appendChild(decoration);
+
+            // Remove the decoration after the animation ends
+            decoration.addEventListener('animationend', () => {
+                decoration.remove();
+
+            });
+        }
+        
+
+    });
+    
+ </script>
+  
+</body>
+</html>
